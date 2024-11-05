@@ -3,18 +3,20 @@
 2. Route 53 Labs : https://youtu.be/-ndsfa-6GMI (no audio)
 3. IAM Concept & Lab : https://youtu.be/9asvt7jh27M
 # Commands for Hadoop:
-start-all.sh
 
-hdfs dfs -mkdir /word_count_in_python
+1. start-all.sh
 
-hdfs dfs -copyFromLocal /path/to/local/word_count_data.t xt /word_count_in_python/
+2. hdfs dfs -mkdir /word_count_in_python
+
+3. hdfs dfs -copyFromLocal /path/to/local/word_count_data.t xt /word_count_in_python/
 #hdfs dfs -copyFromLocal /path 1 /path 2 .... /path n /d estination
 
 chmod +x mapper.py reducer.py
 
-hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-st reaming-*.jar \\
+4. hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-st reaming-*.jar \\
 -input /word_count_in_python/word_count_data.txt \\ -output /word_count_in_python/output \\
 -mapper /path/to/mapper.py \\ -reducer /path/to/reducer.py
+
 e.g 
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-st reaming-*.jar \
 -input /path/to/input.txt \ (/word_count_in_python/word_ count_data.txt)
