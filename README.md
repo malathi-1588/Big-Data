@@ -3,8 +3,8 @@
 1. VPC & EC2 Lab : https://youtu.be/AsSQb--MNXA (no audio)
   
 2. Route 53 Labs : https://youtu.be/-ndsfa-6GMI (no audio)
-3. 
-4. IAM Concept & Lab : https://youtu.be/9asvt7jh27M
+   
+3. IAM Concept & Lab : https://youtu.be/9asvt7jh27M
 # Commands for Hadoop:
 
 1. start-all.sh
@@ -31,4 +31,9 @@ hadoop jar hadoop_user/share/hadoop/tools/lib/hadoop-st reaming-3.3.6.jar
 -mapper mapper.py \\ -reducer reducer.py
 
 ![image](https://github.com/user-attachments/assets/0a36bacc-3bd9-4b29-9369-2e14cb031469)
+
+# Additional tips
+1. To change hadoop pwd -- Sudo passwd hadoop
+2. If data node doesn't work ..delete contents inside data note in the files and run
+3. If namenode doesn't run, reformat the namenode
 </i>
