@@ -40,6 +40,7 @@ hadoop jar hadoop_user/share/hadoop/tools/lib/hadoop-st reaming-3.3.6.jar
 
 
 AWS
-nano <pemfile>.pem (cut copy paste the contents of downloaded pem file)
-chmod 600 <pemfile>.pem
-ssh ubuntu@<ip> -i <pemfile>.pem
+1. nano <pemfile>.pem (cut copy paste the contents of downloaded pem file)
+2. chmod 600 <pemfile>.pem
+3. ssh ubuntu@<ip> -i <pemfile>.pem
+</i>
