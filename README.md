@@ -37,3 +37,9 @@ hadoop jar hadoop_user/share/hadoop/tools/lib/hadoop-st reaming-3.3.6.jar
 2. If data node doesn't work ..delete contents inside data note in the files and run
 3. If namenode doesn't run, reformat the namenode
 </i>
+
+
+AWS
+nano <pemfile>.pem (cut copy paste the contents of downloaded pem file)
+chmod 600 <pemfile>.pem
+ssh ubuntu@<ip> -i <pemfile>.pem
